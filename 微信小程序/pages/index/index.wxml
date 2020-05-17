@@ -1,0 +1,12 @@
+<view class='main'>
+  <view class='one'>
+  </view>
+  <view class='two'>
+    <image class='cent {{item.isof === true ? "sta":"clo" }} {{"z" + item.zind}}'
+     bindtap='setclass'
+      data-index="{{index}}" src="{{item.src}}" wx:for="{{list}}" wx:key="{{index}}">
+      {{item.name}}
+    </image>
+  </view>
+
+</view>
